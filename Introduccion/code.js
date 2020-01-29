@@ -108,7 +108,7 @@ function Draw(ctx)
             ctx.rotate(-10*Math.PI/180);
             ctx.font = 'bold 30px Courier New';
             ctx.fillStyle = "#8B4513";
-            ctx.fillText('Mi experiencia con drones', 770, 200);
+            ctx.fillText('Mi experiencia con drones', 600, 200);
 
             ctx.beginPath();
             ctx.strokeStye = "black";
