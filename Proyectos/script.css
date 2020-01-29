@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: chocolate;
+}
+
+/* Maquetación del menu hamburguesa */
+.fa-bars{
+    top: 6%;
+    left: 3%;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: #8B4513;
+    position:absolute;
+    z-index: 3;
+}
+
+.fa-bars:hover{
+    color: orange;
+}
+
+
+#menu{
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    z-index: 3;
+    display: none;
+}
+
+#menu > ul > li{
+    list-style: none;
+    padding: 0.4em;
+    width: 6em;
+}
+
+#menu > ul > li > a{
+    font-size: 1.1em;
+    color: black;
+}
+
+#menu > ul > li:hover{
+    background-color: orange;
+}
+
+
+/* Maquetación del titulo */
+#Titulo
+{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+    margin-left: 30%;
+    margin-top: 5%;
+    position: absolute;
+    color: #8B4513;
+}
+
+/* Maquetación del subtitulo */
+#Subtitulo
+{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+    margin-left: 43%;
+    margin-top: 8%;
+    position: absolute;
+    color: #8B4513;
+}
+
+/*Maquetación de las imagenes */
+figure{
+    display: block;
+    margin-top: 14%;   
+    margin-left: 20%;     
+    position: absolute; 
+}
+
+figure > a > img {
+    z-index : 3;
+    position: absolute;
+    border-radius: 0px;
+    box-sizing: border-box;
+    transition: border-radius 1s;
+}
+
+figure > a > div {
+    display: block;  
+    position: absolute; 
+    
+    margin-top: 14%;   
+    margin-left: 20%;     
+    
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+    z-index: 3;
+}
+
+img:hover {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.tamañoImagen
+{
+    width: 100px;
+    height: 100px;
+}
+
+#memoryGame {
+    top: -10px;
+    left: 0px;
+}
+
+#alighieri {
+    top: -10px;
+    left: 200px;
+}
+
+#finalDecision {
+    top: -10px;
+    left: 400px;
+}
+
+#gamelogo {
+    top: 145px;
+    left: 0px;
+}
+
+#back_forward {
+    top : 145px;
+    left : 200px;
+}
+
+
+#texto_memory_game {
+    top : 90px;
+    left : 0px;
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 3s;
+}
+
+#texto_alighieri {
+    top : 90px;
+    left : 200px;
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 3s;
+}
+
+#texto_finalDecision {
+    top : 90px;
+    left : 400px;
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 3s;
+}
+
+#texto_battleFrontier {
+    top : 245px;
+    left : 0px;
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 3s;
+}
+
+#texto_back_forward {
+    top : 245px; 
+    left : 200px;
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 3s;
+}
+
+#memoryGame:hover + #texto_memory_game {
+    opacity: 1;
+}
+
+#alighieri:hover + #texto_alighieri {
+    opacity: 1;
+}
+
+#finalDecision:hover + #texto_finalDecision {
+    opacity: 1;
+}
+
+#gamelogo:hover + #texto_battleFrontier {
+    opacity: 1;
+}
+
+#back_forward:hover + #texto_back_forward {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 900px)
+{
+    .tamañoImagen{
+        width: 50px;
+        height: 50px;
+    }
+
+    img:hover {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    #memoryGame {
+        top: 15px;
+        left: 0px;
+    }
+    
+    #alighieri {
+        top: 15px;
+        left: 135px;
+    }
+    
+    #finalDecision {
+        top: 15px;
+        left: 270px;
+    }
+    
+    #gamelogo {
+        top: 145px;
+        left: 100px;
+    }
+    
+    #back_forward {
+        top : 145px;
+        left : 302px;
+    }
+    
+    
+    #texto_memory_game {
+        top : 80px;
+        left : 0px;
+        opacity: 0;
+        transition-delay: 0s;
+        transition-duration: 3s;
+    }
+    
+    #texto_alighieri {
+        top : 80px;
+        left : 135px;
+        opacity: 0;
+        transition-delay: 0s;
+        transition-duration: 3s;
+    }
+    
+    #texto_finalDecision {
+        top : 80px;
+        left : 270px;
+        opacity: 0;
+        transition-delay: 0s;
+        transition-duration: 3s;
+    }
+    
+    #texto_battleFrontier {
+        top : 200px;
+        left : 100px;
+        opacity: 0;
+        transition-delay: 0s;
+        transition-duration: 3s;
+    }
+    
+    #texto_back_forward {
+        top : 200px; 
+        left : 302px;
+        opacity: 0;
+        transition-delay: 0s;
+        transition-duration: 3s;
+    }
+
+    figure > a > div {
+        display: block;  
+        position: absolute; 
+        
+        margin-top: 14%;   
+        margin-left: 20%;     
+        
+        font-size: 8px;
+        color: black;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    
+        z-index: 3;
+    }
+
+    .fa-bars{
+        top: 6%;
+        left: 3%;
+        padding: 0.5em;
+        font-size: 0.75em;
+        color: #8B4513;
+        position:absolute;
+        z-index: 3;
+    }
+
+    #menu{
+        position: absolute;
+        top: 10%;
+        left: 40px;
+        z-index: 3;
+        display: none;
+    }
+    
+    #menu > ul > li{
+        list-style: none;
+        padding: 0.1em;
+        width: 3em;
+    }
+    
+    #menu > ul > li > a{
+        font-size: 0.6em;
+        color: black;
+    }
+}
+
+/* Maquetacion de los contactos */
+#contacto{
+    padding: 1em;
+    display:flex;
+}
+#contacto > ul{
+    margin: auto;
+    display: flex;
+    align-content: center;
+    
+    z-index: 4;
+}
+
+#contacto > ul > li{
+    list-style: none;
+    padding: 1em;
+}
+
+#contacto > ul > li > a > i{
+    font-size: 3em;
+    margin-top: 500px;
+    color: black;
+}
+
+#contacto > ul > li > a > i:hover{
+    color: orange;
+}
+
+@media only screen and (max-width: 1040px)
+{
+    #contacto > ul > li > a > i {
+        margin-top: 400px;
+    }
+} 
+
+@media only screen and (max-width: 800px)
+{
+    #contacto > ul > li > a > i {
+        margin-top: 300px;
+    }
+}

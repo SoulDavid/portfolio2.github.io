@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- JavaScripts -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Introduccion/code.js"></script>
+    <script src = "Introduccion/menu.js"></script>
+    <script src = "Introduccion/parpadeo.js"></script>
+    
+
+    <link rel = "stylesheet" href = "Introduccion/script.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <title> David Martín Almazán </title>
+
+</head>
+<body onload = "bodyLoaded()">
+    <i class="fas fa-bars" onclick="menu()"></i>
+    <nav id="menu">
+        <ul>
+            <li>
+                <a href="index.html" onclick="closeMenu()">
+                    Sobre mi.
+                </a>
+            </li>
+            <li>
+                <a href="Proyectos/proyectos.html" onclick="closeMenu()">
+                    Proyectos.
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div> 
+        <canvas id ="MyCanvas" width=1920 height=1080></canvas> 
+        <p class = "blink" id = "blink"> Haz click en cualquier parte para continuar. </p>
+    </div>
+    <a href = "Proyectos/proyectos.html" id = "botonProyectos"> Proyectos -> </a>
+
+    <section id="Contact">
+        <nav id="contacto">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/david-martin-almazan/" target="_blank" title="Abriendose perfil de David Martín en LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="https://david-martin-almazan.itch.io/" target="_blank" title="Abriendo perfil de David Martín en itch-io"><i class="fab fa-itch-io"></i></a>
+                </li>
+            </ul>
+        </nav>
+  </section>
+    
+</body>
+</html>
